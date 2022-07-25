@@ -1,5 +1,4 @@
 import styles from './Header.module.css';
-import PropTypes from 'prop-types';
 
 function Header() {
 	return (
