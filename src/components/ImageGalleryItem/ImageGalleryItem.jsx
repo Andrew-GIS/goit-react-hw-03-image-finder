@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./ImageGalleryItem.module.css"
+import styles from "./ImageGalleryItem.module.css";
+import PropTypes from 'prop-types';
 
 function ImageGalleryItem ({id, previewURL, tags, onClick}){
 	
@@ -11,5 +12,12 @@ function ImageGalleryItem ({id, previewURL, tags, onClick}){
 			</li>
 		);
 }
+
+ImageGalleryItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  previewURL: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default ImageGalleryItem;
